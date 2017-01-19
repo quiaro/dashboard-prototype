@@ -5,6 +5,7 @@
   "main": "./js/app.js",
   "scripts": {
     "dev": "webpack-dev-server --hot --inline --history-api-fallback",
+    "build": "webpack",
     "test": "jest --watch"
   },
   "keywords": [],
