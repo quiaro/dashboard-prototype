@@ -1,0 +1,69 @@
+.dbo-result-panel {
+  @border-color: #CCCCCC;
+  @firewall-success-text: #FCBD28;
+  @firewall-fail-text: @state-fail;
+  @build-success-text: @state-success;
+  @build-fail-text: @state-fail;
+
+  text-align: center;
+  padding-top: 0.5em;
+
+  > span, > button {
+    display: inline-block;
+  }
+
+  > button {
+    border: 2px solid @border-color;
+    background-color: @state-running;
+    padding: 6px 15px;
+    color: white;
+  }
+
+  .resolution {
+    height: 8em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+    em, b {
+      display: block;
+      width: 100%;
+    }
+    em {
+      font-style: normal;
+    }
+    b {
+      font-weight: normal;
+      font-size: 2.2em;
+    }
+  }
+
+  &.firewall {
+    &.success {
+      .resolution {
+        color: @firewall-success-text;
+      }
+    }
+    &.fail {
+      .resolution {
+        color: @firewall-fail-text;
+      }
+    }
+  }
+
+  &.build {
+    &.success {
+      .resolution {
+        color: @build-success-text;
+      }
+    }
+    &.fail {
+      .resolution {
+        color: @build-fail-text;
+      }
+    }
+  }
+
+}

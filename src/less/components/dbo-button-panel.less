@@ -1,0 +1,110 @@
+.dbo-button-panel {
+  border-width: 2px;
+  border-style: solid;
+  background-color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 15px -2px rgba(128,128,128,1);
+
+  .panel-header {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+
+  .panel-body {
+    color: @text-primary;
+  }
+
+  &.fail {
+    border-color: @state-fail;
+
+    > .panel-header {
+      color: @state-fail;
+    }
+  }
+
+  &.running {
+    border-color: @state-running;
+
+    > .panel-header {
+      color: @state-running;
+    }
+  }
+
+  &.success {
+    border-color: @state-success;
+
+    > .panel-header {
+      color: @state-success;
+    }
+  }
+
+  &.metrics {
+    .panel-body {
+      display: flex;
+      flex-wrap: wrap;
+
+      .dbo-arrow-metric {
+        width: 50%;
+      }
+    }
+  }
+
+  &.build {
+    .panel-body {
+      .options {
+        display: flex;
+        flex-wrap: nowrap;
+
+        > div {
+          width: 46%;
+          height: 115px;
+          position: relative;
+          background: url('../../images/computer.svg') no-repeat center center;
+          background-size: contain;
+          margin-left: 4%;
+
+          &:first-of-type {
+            margin-right: 4%;
+            margin-left: 0;
+          }
+
+          > span {
+            position: absolute;;
+            bottom: 15px;
+            left: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  &.test-result {
+    position: relative;
+
+    .panel-header {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    .panel-body {
+      display: flex;
+      flex-direction: column;
+      height: 9em;
+      flex-wrap: nowrap;
+      justify-content: center;
+
+      .dbo-labeled-bar-chart {
+        &:first-of-type .chart-container {
+          margin-bottom: 0.5em;
+        }
+        &:last-of-type .chart-container {
+          margin-top: 0.5em;
+        }
+      }
+    }
+  }
+}

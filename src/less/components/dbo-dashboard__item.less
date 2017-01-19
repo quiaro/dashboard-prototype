@@ -1,0 +1,158 @@
+.dbo-dashboard__item {
+  margin-bottom: 15px;
+  padding: 3px;
+  border-width: 2px;
+  border-style: solid;
+  height: 17.2em;
+  transition: height 0.3s ease-out;
+
+  .item-header {
+    display: flex;
+    align-items: center;
+
+    > a, > div {
+      display: inline-block;
+      flex: 1;
+      text-align: center;
+
+      &.dbo-progress-chart {
+        max-width: 8em;
+      }
+    }
+
+    > a {
+      text-align: left;
+    }
+
+    .title {
+      text-decoration: none;
+      min-width: 134px;
+
+      .icon {
+        width: 3em;
+        height: 2em;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        vertical-align: middle;
+        margin-right: 1em;
+        position: absolute;
+      }
+
+      .name {
+         margin-left: 3.5em;
+         line-height: 2;
+         text-overflow: ellipsis;
+         display: inline-block;
+         vertical-align: top;
+         white-space: nowrap;
+         overflow: hidden;
+         width: 92%;
+      }
+    }
+  }
+
+  .item-body {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    > .dbo-button-panel,
+    > .dbo-result-panel {
+      width: 18%;
+      max-width: 220px;
+      margin-left: 1%;
+      margin-right: 1%;
+    }
+
+    &.item-body-enter {
+      opacity: 0.01;
+
+      &.item-body-enter-active {
+        opacity: 1;
+        transition: opacity 500ms ease-in;
+      }
+    }
+
+    &.item-body-leave {
+      opacity: 1;
+
+      &.item-body-leave-active {
+        opacity: 0.01;
+        transition: opacity 350ms ease-in;
+      }
+    }
+  }
+
+  &.pending {
+    color: darken(@state-pending, 35%);
+    border-color: @state-pending;
+    background-image: linear-gradient(to left, #FFFFFF 60%, lighten(@state-pending, 45%) 100%);
+
+    .title .name {
+      color: darken(@state-pending, 35%);
+    }
+  }
+
+  &.running {
+    color: darken(@state-running, 35%);
+    border-color: @state-running;
+    background-image: radial-gradient(ellipse farthest-corner at right bottom, #FFFFFF 60%, lighten(@state-running, 35%) 100%);
+
+    .title .name {
+      color: darken(@state-running, 35%);
+    }
+  }
+
+  &.fail {
+    color: darken(@state-fail, 35%);
+    border-color: @state-fail;
+    background-image: linear-gradient(to left, #FFFFFF 60%, lighten(@state-fail, 55%) 100%);
+
+    .title .name {
+      color: darken(@state-fail, 35%);
+    }
+  }
+
+  &.success {
+    color: darken(@state-success, 35%);
+    border-color: @state-success;
+    background-image: linear-gradient(to left, #FFFFFF 60%, lighten(@state-success, 55%) 100%);
+
+    .title .name {
+      color: darken(@state-success, 35%);
+    }
+  }
+
+  &.firewall {
+    .item-header .icon {
+      background-image: url('../../images/brick.svg');
+    }
+  }
+
+  &.build {
+    .item-header .icon {
+      background-image: url('../../images/computer.svg');
+      background-size: contain;
+      height: 3em;
+    }
+  }
+
+  &.collapsed {
+    height: 2em;
+    transition: height 0.3s ease-out 0.6s;
+  }
+
+  &.dbo-dashboard__item-enter {
+    opacity: 0.01;
+    transform: scale(0.9);
+
+    &.dbo-dashboard__item-enter-active {
+      opacity: 1;
+      transform: scale(1.05);
+      transition: opacity 300ms ease-in, transform 500ms;
+    }
+  }
+}

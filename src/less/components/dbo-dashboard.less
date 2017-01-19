@@ -1,0 +1,32 @@
+.dbo-dashboard {
+  font-size: 0.90rem;
+  padding: 30px;
+  min-width: 1024px;
+  box-sizing: border-box;
+
+  > ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .dbo-dashboard__header {
+    display: flex;
+    margin-bottom: 10px;
+
+    li {
+      color: @text-primary;
+      display: inline-block;
+      flex: 1;
+      text-align: center;
+
+      &:first-of-type {
+        text-align: left;
+      }
+
+      &.chart {
+        max-width: 8em;
+      }
+    }
+  }
+}

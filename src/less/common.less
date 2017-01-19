@@ -1,0 +1,32 @@
+.body {
+  @backdrop: #FDFDFD;
+
+  font-size: 100%;
+  height: 100vh;
+  background-image: radial-gradient(ellipse farthest-corner at center, @backdrop 0%, darken(@backdrop, 5%) 100%);
+}
+
+/*
+ * Credit goes to Daniel Eden:
+ * https://github.com/daneden/animate.css/blob/master/source/fading_entrances/fadeInDown.css
+ */
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.dbo-dashboard-appear {
+  animation-name: fadeInDown;
+}

@@ -1,0 +1,33 @@
+.dbo-progress-chart {
+  @border-color: #CCCCCC;
+  @background-color: #D8D8D8;
+
+  height: 1.6em;
+  position: relative;
+  top: -2px;
+
+  > .chart-container {
+    border: 2px solid @border-color;
+    background-color: @background-color;
+    width: 60%;
+    height: inherit;
+    margin: 0 auto;
+
+    > .chart-value {
+      height: inherit;
+      transition: width 1s, background-color 0.5s ease;
+
+      &.fail {
+        background-color: @state-fail;
+      }
+
+      &.running {
+        background-color: @state-running;
+      }
+
+      &.success {
+        background-color: @state-success;
+      }
+    }
+  }
+}
