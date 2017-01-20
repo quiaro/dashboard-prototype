@@ -3,7 +3,7 @@ Dashboard Prototype
 
 POC of a dashboard developed with React/Redux.
 
-The dashboard simulates the loading of contents provided by an API and reacts to a list of actions that intend to simulate a real-time environment.
+The dashboard simulates the loading of tasks provided by an API and reacts to a list of actions that intend to simulate a real-time environment where tasks are added and updated.
 
 ---
 
@@ -11,9 +11,9 @@ The dashboard simulates the loading of contents provided by an API and reacts to
 - Dashboard items can expand/contract
 - Only one dashboard item can be opened at a time
 - Style variations per state (running, accepted, rejected)
-- Ability to fetch an initial list of dashboard items
-- Ability to add a new dashboard item
-- Ability to update dashboard items per changes in the data
+- Ability to fetch an initial list of tasks
+- Ability to add a new task
+- Ability to update tasks per changes in the data
 - Loading spinner for initial data load
 - Animated transitions via CSS and React's animation add-ons
 - Flexible layout with a minimum width (1024px)

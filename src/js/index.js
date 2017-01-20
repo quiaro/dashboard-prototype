@@ -8,7 +8,7 @@ import Root from './components/Root'
 import interaction from './__mocks__/interaction'
 
 let store = Store.configure({
-  // simulate: interaction
+  simulate: interaction
 });
 
 // let store = Store.configure();
