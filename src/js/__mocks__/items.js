@@ -5,8 +5,8 @@ const items = [
     owner: 'ostone',
     timeStarted: 1482258431277,
     status: 'success',
-    statusText: 'Auto-Merged',
-    statusCTA: 'Merged Build',
+    statusText: 'Task Complete',
+    statusCTA: 'View details',
     metric_result: {
   		id: 10,
   		status: 'success',
@@ -80,8 +80,8 @@ const items = [
     owner: 'asmith',
     timeStarted: 1482258431277,
     status: 'fail',
-    statusText: 'Metrics Reduction',
-    statusCTA: 'Find Issues',
+    statusText: 'Task Failed',
+    statusCTA: 'View details',
     metric_result: {
       id: 12,
   		status: 'success',

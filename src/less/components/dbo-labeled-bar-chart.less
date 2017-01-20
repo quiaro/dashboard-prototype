@@ -2,20 +2,21 @@
 
   .chart-container {
     position: relative;
-    height: 2.2em;
+    height: 2.6em;
     top: 50%;
     width: 100%;
-    background-color: @state-fail-faded;
+    background-color: lighten(@state-fail, 10%);
 
     .chart-value {
       height: inherit;
-      background-color: @state-success-faded;
+      background-color: @state-success;
       transition: width 1s;
     }
 
     .legend {
+      color: @header-text;
       position: absolute;
-      top: 3px;
+      top: 0.4em;
       left: 0;
       text-align: center;
       width: inherit;

@@ -5,8 +5,8 @@ export const fetchItems = () => new Promise(resolve => resolve([
     owner: 'ostone',
     timeStarted: 1482258431277,
     status: 'success',
-    statusText: 'Auto-Merged',
-    statusCTA: 'Merged Build',
+    statusText: 'Task Complete',
+    statusCTA: 'View details',
     metric_result: {
   		id: 10,
   		status: 'success',
