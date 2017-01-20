@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
+import moment from 'moment'
 
 import DBO_Progress_Chart from './dbo-progress-chart';
 import DBO_Button_Panel_Metric from './dbo-button-panel_metric';
@@ -28,7 +29,7 @@ const DBO_Dashboard_Item = ({
           <span className='name'>{item.name}</span>
         </a>
         <div className='owner'>{item.owner}</div>
-        <div className='time'>{item.timeStarted}</div>
+        <div className='time'>{moment(item.timeStarted).format('LTS')}</div>
         <div className='state'>{item.status}</div>
 
         <DBO_Progress_Chart
