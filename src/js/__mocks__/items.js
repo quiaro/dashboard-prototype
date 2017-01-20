@@ -1,7 +1,6 @@
 const items = [
   {
     id: 1,
-    type: 'firewall',
     name: 'item-name-1 really great big long name',
     owner: 'ostone',
     timeStarted: 1482258431277,
@@ -54,7 +53,6 @@ const items = [
   },
   {
     id: 2,
-    type: 'firewall',
     name: 'item-name-2',
     owner: 'enorton',
     timeStarted: 1482258431277,
@@ -78,7 +76,6 @@ const items = [
   },
   {
     id: 3,
-    type: 'build',
     name: 'item-name-3',
     owner: 'asmith',
     timeStarted: 1482258431277,

@@ -22,10 +22,9 @@ const DBO_Dashboard_Item = ({
   const collapsedClass = (isCollapsed) ? 'collapsed' : '';
 
   return (
-    <li className={'dbo-dashboard__item ' + item.type + ' ' + item.status + ' ' + collapsedClass}>
+    <li className={'dbo-dashboard__item ' + item.status + ' ' + collapsedClass}>
       <div className='item-header'>
         <a href='#' onClick={() => onItemClick(item.id)} className='title'>
-          <i className='icon'></i>
           <span className='name'>{item.name}</span>
         </a>
         <div className='owner'>{item.owner}</div>
@@ -60,7 +59,6 @@ const DBO_Dashboard_Item = ({
               <DBO_Button_Panel_Test_Result testResult={itemFunctionalTestResult} title='Functional Test' />
 
               <DBO_Result_Panel
-                type={item.type}
                 status={item.status}
                 message={item.statusText}
                 ctaText={item.statusCTA} />

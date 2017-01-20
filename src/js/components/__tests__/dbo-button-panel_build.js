@@ -12,7 +12,7 @@ describe('DBO_Button_Panel_Build', () => {
       <DBO_Button_Panel_Build build={buildData} />
     );
 
-    expect(component.find('.dbo-button-panel.build.fail').length).toBeTruthy();
+    expect(component.find('.dbo-button-panel.fail').length).toBeTruthy();
     expect(component.find('.panel-header').text()).toEqual('Build');
     expect(component.find('.panel-body .options .debug').text()).toEqual('Debug');
     expect(component.find('.panel-body .options .release').text()).toEqual('Release');

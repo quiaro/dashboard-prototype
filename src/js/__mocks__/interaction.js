@@ -136,7 +136,6 @@ const update_item2_H = {
 
 const add_item4 = {
   id: 4,
-  type: 'build',
   name: 'item-name-4',
   owner: 'dquiros',
   timeStarted: 1482258781277,

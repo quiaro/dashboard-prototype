@@ -24,7 +24,6 @@ describe('items reducer', () => {
               items: {
                 1: {
                   id: 1,
-                  type: 'firewall',
                   name: 'item-name-1',
                   owner: 'ostone',
                   timeStarted: 1482258431277,
@@ -34,7 +33,6 @@ describe('items reducer', () => {
                 },
                 2: {
                   id: 2,
-                  type: 'build',
                   name: 'item-name-2',
                   owner: 'wallen',
                   timeStarted: 1482258989678,
@@ -51,7 +49,6 @@ describe('items reducer', () => {
       byId: {
         1: {
           id: 1,
-          type: 'firewall',
           name: 'item-name-1',
           owner: 'ostone',
           timeStarted: 1482258431277,
@@ -61,7 +58,6 @@ describe('items reducer', () => {
         },
         2: {
           id: 2,
-          type: 'build',
           name: 'item-name-2',
           owner: 'wallen',
           timeStarted: 1482258989678,
@@ -81,7 +77,6 @@ describe('items reducer', () => {
         byId: {
           1: {
             id: 1,
-          	type: 'firewall',
           	name: 'item-name-1',
           	owner: 'ostone',
           	timeStarted: 1482258431277,
@@ -101,7 +96,6 @@ describe('items reducer', () => {
               items: {
                 2: {
                   id: 2,
-                	type: 'build',
                 	name: 'item-name-2',
                 	owner: 'wallen',
                 	timeStarted: 1482258989678,
@@ -118,7 +112,6 @@ describe('items reducer', () => {
       byId: {
         1: {
           id: 1,
-          type: 'firewall',
           name: 'item-name-1',
           owner: 'ostone',
           timeStarted: 1482258431277,
@@ -128,7 +121,6 @@ describe('items reducer', () => {
         },
         2: {
           id: 2,
-          type: 'build',
           name: 'item-name-2',
           owner: 'wallen',
           timeStarted: 1482258989678,
@@ -148,7 +140,6 @@ describe('items reducer', () => {
         byId: {
           1: {
             id: 1,
-          	type: 'firewall',
           	name: 'item-name-1',
           	owner: 'ostone',
           	timeStarted: 1482258431277,
@@ -184,7 +175,6 @@ describe('items reducer', () => {
       byId: {
         1: {
           id: 1,
-          type: 'firewall',
           name: 'item-name-1',
           owner: 'ostone',
           timeStarted: 1482258431277,

@@ -1,18 +1,11 @@
 .dbo-result-panel {
   @border-color: #CCCCCC;
-  @firewall-success-text: #FCBD28;
-  @firewall-fail-text: @state-fail;
-  @build-success-text: @state-success;
-  @build-fail-text: @state-fail;
 
   text-align: center;
   padding-top: 0.5em;
 
-  > span, > button {
-    display: inline-block;
-  }
-
   > button {
+    display: inline-block;
     border: 2px solid @border-color;
     background-color: @state-running;
     padding: 6px 15px;
@@ -27,43 +20,22 @@
     align-items: center;
     justify-content: center;
 
-    em, b {
+    b {
       display: block;
       width: 100%;
-    }
-    em {
-      font-style: normal;
-    }
-    b {
       font-weight: normal;
       font-size: 2.2em;
     }
   }
 
-  &.firewall {
-    &.success {
-      .resolution {
-        color: @firewall-success-text;
-      }
-    }
-    &.fail {
-      .resolution {
-        color: @firewall-fail-text;
-      }
+  &.success {
+    .resolution {
+      color: @state-success;
     }
   }
-
-  &.build {
-    &.success {
-      .resolution {
-        color: @build-success-text;
-      }
-    }
-    &.fail {
-      .resolution {
-        color: @build-fail-text;
-      }
+  &.fail {
+    .resolution {
+      color: @state-fail;
     }
   }
-
 }

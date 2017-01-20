@@ -10,7 +10,6 @@ const item = (state, action) => {
       item = response.entities.items[response.result];
       return {
         id: item.id,
-        type: item.type,
         name: item.name,
         owner: item.owner,
         timeStarted: item.timeStarted,

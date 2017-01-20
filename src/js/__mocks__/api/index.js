@@ -1,7 +1,6 @@
 export const fetchItems = () => new Promise(resolve => resolve([
   {
     id: 1,
-    type: 'firewall',
     name: 'item-name-1',
     owner: 'ostone',
     timeStarted: 1482258431277,
