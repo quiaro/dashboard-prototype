@@ -1,6 +1,6 @@
 .dbo-dashboard__item {
   color: @text-primary;
-  padding: 6px 2px;
+  padding: 8px 2px;
   background-color: @item-bg;
   border-color: @item-border;
   border-width: 1px 0 0 0;
@@ -43,6 +43,11 @@
         width: 92%;
       }
     }
+
+    .state i {
+      font-style: normal;
+      font-size: 1.2em;
+    }
   }
 
   .item-body {
@@ -77,13 +82,17 @@
     }
   }
 
-  &.pending {}
+  &.fail {
+    .state i {
+      color: @state-fail;
+    }
+  }
 
-  &.running {}
-
-  &.fail {}
-
-  &.success {}
+  &.success {
+    .state i {
+      color: @state-success;
+    }
+  }
 
   &.collapsed {
     height: 2em;

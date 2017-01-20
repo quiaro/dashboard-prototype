@@ -21,6 +21,9 @@ const DBO_Dashboard_Item = ({
   const itemFunctionalTestResult = item.functional_test_result && functionalTestResults[item.functional_test_result] || {};
   const isCollapsed = (item.id !== expanded);
   const collapsedClass = (isCollapsed) ? 'collapsed' : '';
+  const icon = (item.status === 'success') ? 'done' :
+                (item.status === 'fail') ? 'error_outline' :
+                  (item.status === 'running') ? 'cached' : 'hourglass_empty';
 
   return (
     <li className={'dbo-dashboard__item ' + item.status + ' ' + collapsedClass}>
@@ -30,7 +33,7 @@ const DBO_Dashboard_Item = ({
         </a>
         <div className='owner'>{item.owner}</div>
         <div className='time'>{moment(item.timeStarted).format('LTS')}</div>
-        <div className='state'>{item.status}</div>
+        <div className='state material-icons'><i>{icon}</i></div>
 
         <DBO_Progress_Chart
           progress={itemMetric.progressPercentage}
