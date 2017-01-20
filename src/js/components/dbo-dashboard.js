@@ -13,7 +13,7 @@ const DBO_Dashboard = (params) => (
 
     <div className='dbo-dashboard animated'>
       <ol className='dbo-dashboard__header'>
-        <li className="title">Changelist / Build</li>
+        <li className="title">Task</li>
         <li className="owner">Owner</li>
         <li className="time">Time Started</li>
         <li className="state">State</li>

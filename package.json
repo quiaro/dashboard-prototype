@@ -2,7 +2,7 @@
   "name": "dashboard-prototype",
   "version": "1.0.0",
   "description": "Animated dashboard prototype for managing a list of items",
-  "main": "./js/app.js",
+  "main": "./static/js/index.js",
   "scripts": {
     "dev": "webpack-dev-server --hot --inline --history-api-fallback",
     "build": "webpack",

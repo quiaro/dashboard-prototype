@@ -1,7 +1,7 @@
 .dbo-dashboard__item {
-  margin-bottom: 15px;
-  padding: 3px;
-  border-width: 2px;
+  padding: 6px 2px;
+  border-color: @item-border;
+  border-width: 1px 0 0 0;
   border-style: solid;
   height: 17.2em;
   transition: height 0.3s ease-out;
@@ -10,7 +10,8 @@
     display: flex;
     align-items: center;
 
-    > a, > div {
+    > div,
+    > a {
       display: inline-block;
       flex: 1;
       text-align: center;
@@ -41,14 +42,15 @@
       }
 
       .name {
-         margin-left: 3.5em;
-         line-height: 2;
-         text-overflow: ellipsis;
-         display: inline-block;
-         vertical-align: top;
-         white-space: nowrap;
-         overflow: hidden;
-         width: 92%;
+        color: @text-primary;
+        margin-left: 3.5em;
+        line-height: 2;
+        text-overflow: ellipsis;
+        display: inline-block;
+        vertical-align: top;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 92%;
       }
     }
   }
@@ -59,8 +61,8 @@
     padding-top: 20px;
     padding-bottom: 20px;
 
-    > .dbo-button-panel,
-    > .dbo-result-panel {
+     > .dbo-result-panel,
+    > .dbo-button-panel {
       width: 18%;
       max-width: 220px;
       margin-left: 1%;
@@ -86,45 +88,13 @@
     }
   }
 
-  &.pending {
-    color: darken(@state-pending, 35%);
-    border-color: @state-pending;
-    background-image: linear-gradient(to left, #FFFFFF 60%, lighten(@state-pending, 45%) 100%);
+  &.pending {}
 
-    .title .name {
-      color: darken(@state-pending, 35%);
-    }
-  }
+  &.running {}
 
-  &.running {
-    color: darken(@state-running, 35%);
-    border-color: @state-running;
-    background-image: radial-gradient(ellipse farthest-corner at right bottom, #FFFFFF 60%, lighten(@state-running, 35%) 100%);
+  &.fail {}
 
-    .title .name {
-      color: darken(@state-running, 35%);
-    }
-  }
-
-  &.fail {
-    color: darken(@state-fail, 35%);
-    border-color: @state-fail;
-    background-image: linear-gradient(to left, #FFFFFF 60%, lighten(@state-fail, 55%) 100%);
-
-    .title .name {
-      color: darken(@state-fail, 35%);
-    }
-  }
-
-  &.success {
-    color: darken(@state-success, 35%);
-    border-color: @state-success;
-    background-image: linear-gradient(to left, #FFFFFF 60%, lighten(@state-success, 55%) 100%);
-
-    .title .name {
-      color: darken(@state-success, 35%);
-    }
-  }
+  &.success {}
 
   &.firewall {
     .item-header .icon {
@@ -154,5 +124,9 @@
       transform: scale(1.05);
       transition: opacity 300ms ease-in, transform 500ms;
     }
+  }
+
+  &:last-of-type {
+    border-width: 1px 0;
   }
 }
