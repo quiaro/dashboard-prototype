@@ -20,7 +20,7 @@ describe('actions', () => {
             items: {
               1: {
                 id: 1,
-                name: 'item-name-1',
+                name: 'Task name 1',
                 owner: 'ostone',
                 timeStarted: 1482258431277,
                 status: 'success',
@@ -114,7 +114,7 @@ describe('actions', () => {
   it('should create an "add dashboard item" action', () => {
     let addAction = actions.addDashboardItem({
       id: 1,
-      name: 'item-name-1',
+      name: 'Task name 1',
       owner: 'ostone',
       timeStarted: 1482258431277,
       status: 'success',
@@ -141,7 +141,7 @@ describe('actions', () => {
             items: {
               1: {
                 id: 1,
-                name: 'item-name-1',
+                name: 'Task name 1',
                 owner: 'ostone',
                 timeStarted: 1482258431277,
                 status: 'success',

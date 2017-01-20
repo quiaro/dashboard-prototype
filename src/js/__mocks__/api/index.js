@@ -1,7 +1,7 @@
 export const fetchItems = () => new Promise(resolve => resolve([
   {
     id: 1,
-    name: 'item-name-1',
+    name: 'Task name 1',
     owner: 'ostone',
     timeStarted: 1482258431277,
     status: 'success',

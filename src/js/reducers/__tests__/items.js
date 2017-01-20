@@ -24,7 +24,7 @@ describe('items reducer', () => {
               items: {
                 1: {
                   id: 1,
-                  name: 'item-name-1',
+                  name: 'Task name 1',
                   owner: 'ostone',
                   timeStarted: 1482258431277,
                   metric_result: null,
@@ -33,7 +33,7 @@ describe('items reducer', () => {
                 },
                 2: {
                   id: 2,
-                  name: 'item-name-2',
+                  name: 'Task name 2',
                   owner: 'wallen',
                   timeStarted: 1482258989678,
                   metric_result: null,
@@ -49,7 +49,7 @@ describe('items reducer', () => {
       byId: {
         1: {
           id: 1,
-          name: 'item-name-1',
+          name: 'Task name 1',
           owner: 'ostone',
           timeStarted: 1482258431277,
           metric_result: null,
@@ -58,7 +58,7 @@ describe('items reducer', () => {
         },
         2: {
           id: 2,
-          name: 'item-name-2',
+          name: 'Task name 2',
           owner: 'wallen',
           timeStarted: 1482258989678,
           metric_result: null,
@@ -77,7 +77,7 @@ describe('items reducer', () => {
         byId: {
           1: {
             id: 1,
-          	name: 'item-name-1',
+          	name: 'Task name 1',
           	owner: 'ostone',
           	timeStarted: 1482258431277,
           	metric_result: null,
@@ -96,7 +96,7 @@ describe('items reducer', () => {
               items: {
                 2: {
                   id: 2,
-                	name: 'item-name-2',
+                	name: 'Task name 2',
                 	owner: 'wallen',
                 	timeStarted: 1482258989678,
                 	metric_result: null,
@@ -112,7 +112,7 @@ describe('items reducer', () => {
       byId: {
         1: {
           id: 1,
-          name: 'item-name-1',
+          name: 'Task name 1',
           owner: 'ostone',
           timeStarted: 1482258431277,
           metric_result: null,
@@ -121,7 +121,7 @@ describe('items reducer', () => {
         },
         2: {
           id: 2,
-          name: 'item-name-2',
+          name: 'Task name 2',
           owner: 'wallen',
           timeStarted: 1482258989678,
           metric_result: null,
@@ -140,7 +140,7 @@ describe('items reducer', () => {
         byId: {
           1: {
             id: 1,
-          	name: 'item-name-1',
+          	name: 'Task name 1',
           	owner: 'ostone',
           	timeStarted: 1482258431277,
             status: 'pending',
@@ -175,7 +175,7 @@ describe('items reducer', () => {
       byId: {
         1: {
           id: 1,
-          name: 'item-name-1',
+          name: 'Task name 1',
           owner: 'ostone',
           timeStarted: 1482258431277,
           status: 'pending',

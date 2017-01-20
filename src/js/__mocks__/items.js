@@ -1,7 +1,7 @@
 const items = [
   {
     id: 1,
-    name: 'item-name-1 really great big long name',
+    name: 'Task name 1 really great big long name',
     owner: 'ostone',
     timeStarted: 1482258431277,
     status: 'success',
@@ -53,7 +53,7 @@ const items = [
   },
   {
     id: 2,
-    name: 'item-name-2',
+    name: 'Task name 2',
     owner: 'enorton',
     timeStarted: 1482258431277,
     status: 'running',
@@ -76,7 +76,7 @@ const items = [
   },
   {
     id: 3,
-    name: 'item-name-3',
+    name: 'Task name 3',
     owner: 'asmith',
     timeStarted: 1482258431277,
     status: 'fail',

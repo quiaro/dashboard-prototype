@@ -136,7 +136,7 @@ const update_item2_H = {
 
 const add_item4 = {
   id: 4,
-  name: 'item-name-4',
+  name: 'Task name 4',
   owner: 'dquiros',
   timeStarted: 1482258781277,
   status: 'pending',
