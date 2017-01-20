@@ -56,8 +56,8 @@ const DBO_Dashboard_Item = ({
           (!isCollapsed) &&
             <div className='item-body' key="item-body">
               <DBO_Button_Panel_Metric metrics={itemMetric} />
-              <DBO_Button_Panel_Test_Result testResult={itemUnitTestResult} title='Unit Test' />
-              <DBO_Button_Panel_Test_Result testResult={itemFunctionalTestResult} title='Functional Test' />
+              <DBO_Button_Panel_Test_Result testResult={itemUnitTestResult} title='Phase II' />
+              <DBO_Button_Panel_Test_Result testResult={itemFunctionalTestResult} title='Phase III' />
 
               <DBO_Result_Panel
                 status={item.status}

@@ -7,12 +7,12 @@ describe('DBO_Button_Panel_Metric', () => {
     const metricsData = {
       status: 'running',
       data: [{
-        label: 'Test',
+        label: 'Metric 1',
         value: 64,
         result: 'success'
       },
       {
-        label: 'Maintainability',
+        label: 'Metric 2',
         value: 53,
         result: 'fail'
       }]
@@ -22,7 +22,7 @@ describe('DBO_Button_Panel_Metric', () => {
     );
 
     expect(component.find('.dbo-button-panel.metrics.running').length).toBeTruthy();
-    expect(component.find('.panel-header').text()).toEqual('Metrics');
-    expect(component.find('.panel-body .dbo-arrow-metric').length).toEqual(2);
+    expect(component.find('.panel-header').text()).toEqual('Phase I');
+    expect(component.find('.panel-body .dbo-single-metric').length).toEqual(2);
   })
 })

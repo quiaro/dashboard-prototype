@@ -8,12 +8,12 @@ const update_item2_A = {
     progressPercentage: 42,
     data: [
       {
-        label: 'Test',
+        label: 'Metric 1',
         value: 55,
         result: 'ambivalent'
       },
       {
-        label: 'Maintainability',
+        label: 'Metric 2',
         value: 73,
         result: 'success'
       }
@@ -29,17 +29,17 @@ const update_item2_B = {
     progressPercentage: 68,
     data: [
       {
-    		label: 'Test',
+    		label: 'Metric 1',
     		value: 55,
     		result: 'ambivalent'
     	},
     	{
-    		label: 'Maintainability',
+    		label: 'Metric 2',
     		value: 73,
     		result: 'success'
     	},
     	{
-    		label: 'Security',
+    		label: 'Metric 3',
     		value: 58,
     		result: 'ambivalent'
     	}
@@ -55,22 +55,22 @@ const update_item2_C = {
     progressPercentage: 100,
     data: [
       {
-    		label: 'Test',
+    		label: 'Metric 1',
     		value: 55,
     		result: 'ambivalent'
     	},
     	{
-    		label: 'Maintainability',
+    		label: 'Metric 2',
     		value: 73,
     		result: 'success'
     	},
     	{
-    		label: 'Security',
+    		label: 'Metric 3',
     		value: 58,
     		result: 'ambivalent'
     	},
     	{
-    		label: 'Workmanship',
+    		label: 'Metric 4',
     		value: 82,
     		result: 'success'
     	}
@@ -174,22 +174,22 @@ const update_item4_B = {
     progressPercentage: 100,
     data: [
       {
-    		label: 'Test',
+    		label: 'Metric 1',
     		value: 55,
     		result: 'ambivalent'
     	},
     	{
-    		label: 'Maintainability',
+    		label: 'Metric 2',
     		value: 73,
     		result: 'success'
     	},
     	{
-    		label: 'Security',
+    		label: 'Metric 3',
     		value: 58,
     		result: 'ambivalent'
     	},
     	{
-    		label: 'Workmanship',
+    		label: 'Metric 4',
     		value: 34,
     		result: 'fail'
     	}

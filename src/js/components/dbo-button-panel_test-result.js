@@ -10,8 +10,8 @@ const DBO_Button_Panel_Test_Result = ({ testResult, title }) => {
     <button className={'dbo-button-panel test-result ' + testResult.status}>
       <b className='panel-header'>{title}</b>
       <div className='panel-body'>
-        <DBO_Labeled_Bar_Chart percentage={testsPercentage} legend='tests passed' />
-        <DBO_Labeled_Bar_Chart percentage={coveragePercentage} legend='code covered' />
+        <DBO_Labeled_Bar_Chart percentage={testsPercentage} legend='Measurement 1' />
+        <DBO_Labeled_Bar_Chart percentage={coveragePercentage} legend='Measurement 2' />
       </div>
     </button>
   )

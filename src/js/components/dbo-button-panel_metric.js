@@ -1,12 +1,12 @@
 import React from 'react'
-import DBO_Arrow_Metric from './dbo-arrow-metric'
+import DBO_Single_Metric from './dbo-single-metric'
 
 const DBO_Button_Panel_Metric = ({ metrics }) => (
   <button className={'dbo-button-panel metrics ' + metrics.status}>
-    <b className='panel-header'>Metrics</b>
+    <b className='panel-header'>Phase I</b>
     <div className='panel-body'>
       {metrics.data.map(datum =>
-        <DBO_Arrow_Metric key={datum.label} data={datum} />
+        <DBO_Single_Metric key={datum.label} data={datum} />
       )}
     </div>
   </button>

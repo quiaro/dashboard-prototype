@@ -1,0 +1,58 @@
+.dbo-single-metric {
+  @value-diameter: 3.5em;
+
+  color: #4d4d4d;
+  margin-top: 6px;
+
+  .value {
+    border-radius: 50%;
+    position: relative;
+    height: @value-diameter;
+    width: @value-diameter;
+    margin: 0 auto;
+
+    .text {
+      text-align: center;
+      display: block;
+      font-size: 1.2em;
+      line-height: 3;
+    }
+  }
+
+  .label {
+    display: block;
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 3px;
+  }
+
+  &.success {
+    .value {
+      background-color: #61953F;
+
+      .text {
+        color: white;
+      }
+    }
+  }
+
+  &.fail {
+    .value {
+      background-color: #BD0610;
+
+      .text {
+        color: white;
+      }
+    }
+  }
+
+  &.ambivalent {
+    .value {
+      background-color: #FED86E;
+
+      .text {
+        color: @text-primary;
+      }
+    }
+  }
+}

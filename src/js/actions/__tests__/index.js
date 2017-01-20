@@ -39,22 +39,22 @@ describe('actions', () => {
                 progressPercentage: 100,
                 data: [
                   {
-                    label: 'Test',
+                    label: 'Metric 1',
                     value: 64,
                     result: 'success'
                   },
                   {
-                    label: 'Maintainability',
+                    label: 'Metric 2',
                     value: 53,
                     result: 'fail'
                   },
                   {
-                    label: 'Security',
+                    label: 'Metric 3',
                     value: 64,
                     result: 'ambivalent'
                   },
                   {
-                    label: 'Workmanship',
+                    label: 'Metric 4',
                     value: 72,
                     result: 'ambivalent'
                   }
