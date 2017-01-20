@@ -29,7 +29,6 @@ describe('items reducer', () => {
                   owner: 'ostone',
                   timeStarted: 1482258431277,
                   metric_result: null,
-                  build_result: null,
                   unit_tests_result: null,
                   functional_tests_result: null
                 },
@@ -40,7 +39,6 @@ describe('items reducer', () => {
                   owner: 'wallen',
                   timeStarted: 1482258989678,
                   metric_result: null,
-                  build_result: null,
                   unit_tests_result: null,
                   functional_tests_result: null
                 }
@@ -58,7 +56,6 @@ describe('items reducer', () => {
           owner: 'ostone',
           timeStarted: 1482258431277,
           metric_result: null,
-          build_result: null,
           unit_tests_result: null,
           functional_tests_result: null
         },
@@ -69,7 +66,6 @@ describe('items reducer', () => {
           owner: 'wallen',
           timeStarted: 1482258989678,
           metric_result: null,
-          build_result: null,
           unit_tests_result: null,
           functional_tests_result: null
         }
@@ -90,7 +86,6 @@ describe('items reducer', () => {
           	owner: 'ostone',
           	timeStarted: 1482258431277,
           	metric_result: null,
-          	build_result: null,
           	unit_tests_result: null,
           	functional_tests_result: null
           }
@@ -111,7 +106,6 @@ describe('items reducer', () => {
                 	owner: 'wallen',
                 	timeStarted: 1482258989678,
                 	metric_result: null,
-                	build_result: null,
                 	unit_tests_result: null,
                 	functional_tests_result: null
                 }
@@ -129,7 +123,6 @@ describe('items reducer', () => {
           owner: 'ostone',
           timeStarted: 1482258431277,
           metric_result: null,
-          build_result: null,
           unit_tests_result: null,
           functional_tests_result: null
         },
@@ -140,7 +133,6 @@ describe('items reducer', () => {
           owner: 'wallen',
           timeStarted: 1482258989678,
           metric_result: null,
-          build_result: null,
           unit_tests_result: null,
           functional_tests_result: null
         }
@@ -164,7 +156,6 @@ describe('items reducer', () => {
             statusText: '',
             statusCTA: '',
           	metric_result: null,
-          	build_result: null,
           	unit_tests_result: null,
           	functional_tests_result: null
           }
@@ -181,7 +172,6 @@ describe('items reducer', () => {
                 1: {
                   id: 1,
                 	metric_result: 1,
-                	build_result: 2,
                 	unit_tests_result: 3,
                 	functional_tests_result: null
                 }
@@ -202,7 +192,6 @@ describe('items reducer', () => {
           statusText: '',
           statusCTA: '',
           metric_result: 1,
-          build_result: 2,
           unit_tests_result: 3,
           functional_tests_result: null
         }

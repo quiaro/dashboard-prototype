@@ -29,7 +29,6 @@ const mapStateToProps = (state) => ({
   expanded: selectors.getExpanded(state),
   items: selectors.getAllItems(state),
   metrics: selectors.getAllMetrics(state),
-  builds: selectors.getAllBuilds(state),
   unitTestResults: selectors.getAllUnitTestResults(state),
   functionalTestResults: selectors.getAllFunctionalTestResults(state),
   isFetching: selectors.getIsFetching(state)

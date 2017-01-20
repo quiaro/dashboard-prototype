@@ -35,12 +35,6 @@ const items = [
   			}
   		]
   	},
-    build_result: {
-  		id: 20,
-  		status: 'success',
-      progressPercentage: 100,
-  		timeFinished: 1482258989678
-    },
     unit_test_result: {
       id: 30,
   		status: 'success',
@@ -79,7 +73,6 @@ const items = [
       	}
       ]
     },
-    build_result: null,
     unit_test_result: null,
     functional_test_result: null
   },
@@ -118,12 +111,6 @@ const items = [
   				result: 'success'
   			}
   		]
-    },
-    build_result: {
-      id: 22,
-  		status: 'fail',
-      progressPercentage: 100,
-  		timeFinished: 1482258989678
     },
     unit_test_result: {
       id: 32,

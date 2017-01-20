@@ -2,7 +2,6 @@ import { combineReducers } from 'redux'
 import { ACTIONS } from '../actions/constants'
 
 import metric from './metric'
-import build from './build'
 import unitTestResult from './unitTestResult'
 import functionalTestResult from './functionalTestResult'
 
@@ -18,7 +17,6 @@ const createList = (type) => {
 
   const constructorMap = {
     'metric_result':          metric,
-    'build_result':           build,
     'unit_test_result':       unitTestResult,
     'functional_test_result': functionalTestResult
   }

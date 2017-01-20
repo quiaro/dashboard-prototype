@@ -18,7 +18,6 @@ const item = (state, action) => {
         statusText: item.statusText,
         statusCTA: item.statusCTA,
         metric_result: item.metric_result,
-        build_result: item.build_result,
         unit_test_result: item.unit_test_result,
         functional_test_result: item.functional_test_result
       };
@@ -31,7 +30,6 @@ const item = (state, action) => {
         statusText: item.statusText || '',
         statusCTA: item.statusCTA || '',
         metric_result: item.metric_result || state.metric_result,
-        build_result: item.build_result || state.build_result,
         unit_test_result: item.unit_test_result || state.unit_test_result,
         functional_test_result: item.functional_test_result || state.functional_test_result
       };

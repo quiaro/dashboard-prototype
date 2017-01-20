@@ -17,10 +17,9 @@ const DBO_Dashboard = (params) => (
         <li className="owner">Owner</li>
         <li className="time">Time Started</li>
         <li className="state">State</li>
-        <li className="chart">Metrics</li>
-        <li className="chart">Build</li>
-        <li className="chart">Unit Test</li>
-        <li className="chart">Functional Test</li>
+        <li className="chart">Phase I</li>
+        <li className="chart">Phase II</li>
+        <li className="chart">Phase III</li>
       </ol>
       <ul className='dbo-container'>
         <ReactCSSTransitionGroup

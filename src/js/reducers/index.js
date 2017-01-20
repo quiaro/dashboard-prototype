@@ -15,10 +15,6 @@ export const getAllMetrics = (state) => {
   return listSelectors.getAll(state.metrics)
 }
 
-export const getAllBuilds = (state) => {
-  return listSelectors.getAll(state.builds)
-}
-
 export const getAllUnitTestResults = (state) => {
   return listSelectors.getAll(state.unitTestResults)
 }
@@ -35,7 +31,6 @@ const dashboardApp = combineReducers({
   expanded,
   items,
   metrics: createList('metric_result'),
-  builds: createList('build_result'),
   unitTestResults: createList('unit_test_result'),
   functionalTestResults: createList('functional_test_result')
 })
