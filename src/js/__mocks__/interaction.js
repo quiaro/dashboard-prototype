@@ -80,26 +80,6 @@ const update_item2_C = {
 
 const update_item2_D = {
   id: 2,
-  build_result: {
-    id: 21,
-    status: 'running',
-    progressPercentage: 58,
-    timeFinished: null
-  }
-}
-
-const update_item2_E = {
-  id: 2,
-  build_result: {
-    id: 21,
-    status: 'success',
-    progressPercentage: 100,
-    timeFinished: 1482258989678
-  }
-}
-
-const update_item2_F = {
-  id: 2,
   unit_test_result: {
     id: 31,
     status: 'running',
@@ -110,7 +90,7 @@ const update_item2_F = {
   }
 }
 
-const update_item2_G = {
+const update_item2_E = {
   id: 2,
   unit_test_result: {
     id: 31,
@@ -122,7 +102,7 @@ const update_item2_G = {
   }
 }
 
-const update_item2_H = {
+const update_item2_F = {
   id: 2,
   unit_test_result: {
     id: 31,
@@ -143,7 +123,6 @@ const add_item4 = {
   statusText: '',
   statusCTA: '',
   metric_result: null,
-  build_result: null,
   unit_test_result: null,
   functional_test_result: null
 }

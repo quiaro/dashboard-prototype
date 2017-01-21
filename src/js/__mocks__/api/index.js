@@ -34,12 +34,6 @@ export const fetchItems = () => new Promise(resolve => resolve([
   			}
   		]
   	},
-    build_result: {
-  		id: 20,
-  		status: 'success',
-      progressPercentage: 100,
-  		timeFinished: 1482258989678
-    },
     unit_test_result: {
       id: 30,
   		status: 'success',

@@ -27,7 +27,6 @@ describe('actions', () => {
                 statusText: 'Task Complete',
                 statusCTA: 'View details',
                 metric_result: 10,
-                build_result: 20,
                 unit_test_result: 30,
                 functional_test_result: 40
               }
@@ -59,14 +58,6 @@ describe('actions', () => {
                     result: 'ambivalent'
                   }
                 ]
-              }
-            },
-            build_results: {
-              20: {
-                id: 20,
-                status: 'success',
-                progressPercentage: 100,
-                timeFinished: 1482258989678
               }
             },
             unit_test_results: {
@@ -121,7 +112,6 @@ describe('actions', () => {
       statusText: 'Task Complete',
       statusCTA: 'View details',
       metric_result: null,
-      build_result: null,
       unit_test_result: null,
       functional_test_result: {
         id: 40,
@@ -148,7 +138,6 @@ describe('actions', () => {
                 statusText: 'Task Complete',
                 statusCTA: 'View details',
                 metric_result: null,
-                build_result: null,
                 unit_test_result: null,
                 functional_test_result: 40,
               }
@@ -176,12 +165,6 @@ describe('actions', () => {
       statusText: 'Task Complete',
       statusCTA: 'View details',
       metric_result: null,
-      build_result: {
-        id: 20,
-        status: 'success',
-        progressPercentage: 100,
-        timeFinished: 1482258989678
-      },
       unit_test_result: null,
       functional_test_result: {
         id: 40,
@@ -205,17 +188,8 @@ describe('actions', () => {
                 statusText: 'Task Complete',
                 statusCTA: 'View details',
                 metric_result: null,
-                build_result: 20,
                 unit_test_result: null,
                 functional_test_result: 40,
-              }
-            },
-            build_results: {
-              20: {
-                id: 20,
-                status: 'success',
-                progressPercentage: 100,
-                timeFinished: 1482258989678
               }
             },
             functional_test_results: {

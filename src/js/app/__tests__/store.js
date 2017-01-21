@@ -15,10 +15,6 @@ describe('App Store', () => {
         byId: {},
         allIds: []
       },
-      builds: {
-        byId: {},
-        allIds: []
-      },
       unitTestResults: {
         byId: {},
         allIds: []

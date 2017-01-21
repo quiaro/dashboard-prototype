@@ -13,9 +13,9 @@ const item = (state, action) => {
         name: item.name,
         owner: item.owner,
         timeStarted: item.timeStarted,
-        status: item.status,
-        statusText: item.statusText,
-        statusCTA: item.statusCTA,
+        status: item.status || 'pending',
+        statusText: item.statusText || '',
+        statusCTA: item.statusCTA || '',
         metric_result: item.metric_result,
         unit_test_result: item.unit_test_result,
         functional_test_result: item.functional_test_result

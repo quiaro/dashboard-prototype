@@ -28,8 +28,8 @@ describe('items reducer', () => {
                   owner: 'ostone',
                   timeStarted: 1482258431277,
                   metric_result: null,
-                  unit_tests_result: null,
-                  functional_tests_result: null
+                  unit_test_result: null,
+                  functional_test_result: null
                 },
                 2: {
                   id: 2,
@@ -37,8 +37,8 @@ describe('items reducer', () => {
                   owner: 'wallen',
                   timeStarted: 1482258989678,
                   metric_result: null,
-                  unit_tests_result: null,
-                  functional_tests_result: null
+                  unit_test_result: null,
+                  functional_test_result: null
                 }
               }
             }
@@ -53,8 +53,8 @@ describe('items reducer', () => {
           owner: 'ostone',
           timeStarted: 1482258431277,
           metric_result: null,
-          unit_tests_result: null,
-          functional_tests_result: null
+          unit_test_result: null,
+          functional_test_result: null
         },
         2: {
           id: 2,
@@ -62,8 +62,8 @@ describe('items reducer', () => {
           owner: 'wallen',
           timeStarted: 1482258989678,
           metric_result: null,
-          unit_tests_result: null,
-          functional_tests_result: null
+          unit_test_result: null,
+          functional_test_result: null
         }
       },
       allIds: [1, 2],
@@ -81,8 +81,8 @@ describe('items reducer', () => {
           	owner: 'ostone',
           	timeStarted: 1482258431277,
           	metric_result: null,
-          	unit_tests_result: null,
-          	functional_tests_result: null
+          	unit_test_result: null,
+          	functional_test_result: null
           }
         },
         allIds: [1],
@@ -100,8 +100,8 @@ describe('items reducer', () => {
                 	owner: 'wallen',
                 	timeStarted: 1482258989678,
                 	metric_result: null,
-                	unit_tests_result: null,
-                	functional_tests_result: null
+                	unit_test_result: null,
+                	functional_test_result: null
                 }
               }
             }
@@ -116,17 +116,20 @@ describe('items reducer', () => {
           owner: 'ostone',
           timeStarted: 1482258431277,
           metric_result: null,
-          unit_tests_result: null,
-          functional_tests_result: null
+          unit_test_result: null,
+          functional_test_result: null
         },
         2: {
           id: 2,
           name: 'Task name 2',
           owner: 'wallen',
           timeStarted: 1482258989678,
+          status: 'pending',
+          statusText: '',
+          statusCTA: '',
           metric_result: null,
-          unit_tests_result: null,
-          functional_tests_result: null
+          unit_test_result: null,
+          functional_test_result: null
         }
       },
       allIds: [1, 2],
@@ -147,8 +150,8 @@ describe('items reducer', () => {
             statusText: '',
             statusCTA: '',
           	metric_result: null,
-          	unit_tests_result: null,
-          	functional_tests_result: null
+          	unit_test_result: null,
+          	functional_test_result: null
           }
         },
         allIds: [1],
@@ -163,8 +166,8 @@ describe('items reducer', () => {
                 1: {
                   id: 1,
                 	metric_result: 1,
-                	unit_tests_result: 3,
-                	functional_tests_result: null
+                	unit_test_result: 3,
+                	functional_test_result: null
                 }
               }
             }
@@ -182,8 +185,8 @@ describe('items reducer', () => {
           statusText: '',
           statusCTA: '',
           metric_result: 1,
-          unit_tests_result: 3,
-          functional_tests_result: null
+          unit_test_result: 3,
+          functional_test_result: null
         }
       },
       allIds: [1],
