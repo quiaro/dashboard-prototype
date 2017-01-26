@@ -190,9 +190,7 @@ const interaction = {
     actions.updateDashboardItem(update_item4_A),
     actions.expandDashboardItem(2),
     actions.updateDashboardItem(update_item2_F),
-    actions.updateDashboardItem(update_item2_G),
     actions.updateDashboardItem(update_item4_B),
-    actions.updateDashboardItem(update_item2_H),
     actions.expandDashboardItem(2)
   ]
 };
